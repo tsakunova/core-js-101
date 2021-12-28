@@ -127,7 +127,7 @@ describe('07-promises-tasks', () => {
       });
   }, true);
 
-  it.skip('function getFastestPromise should return correct Promise that will be resolved with value of first resolved Promise', (done) => {
+  it.optional('function getFastestPromise should return correct Promise that will be resolved with value of first resolved Promise', (done) => {
     const promises1 = [
       new Promise((resolve) => setTimeout(() => resolve('I\'m second!'), 500)),
       Promise.resolve('I\'m first!'),
