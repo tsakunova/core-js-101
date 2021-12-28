@@ -4,7 +4,7 @@
   "description": "Core JS 101",
   "scripts": {
     "test": "npm run lint && mocha",
-    "lint": "npm run lint -- --fix"
+    "lint": "node node_modules/eslint/bin/eslint.js ./src"
   },
   "author": "aorgish, mikhama",
   "license": "MIT",
